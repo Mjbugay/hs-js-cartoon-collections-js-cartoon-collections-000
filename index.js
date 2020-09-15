@@ -1,6 +1,6 @@
 function dwarfRollCall(dwarves) {
   var names = "";
-  for (var i = 0; i < dwarves.length; i++) {
+  for (var i = 0; i < dwarves.length / 2; i++) {
     names += `${(i+1)}. ${dwarves[i]} `;
   }
   return names;
@@ -34,6 +34,19 @@ function findTheCheese (foods) {
       else if (foods[i] == "camembert") {
         return foods[i];
     }
+    else if (foods[i] == "swiss") {
+      return foods[i];
+    }
   }    
       return "no cheese!";
+}
+
+function wordsWithB (words) {
+  var results = [];
+  for (var i = 0; i < words.length; i++) {
+    if (word[i][0] == "b") {
+      results.push(word[i]);
+    }
+  }
+  return results;
 }
